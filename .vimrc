@@ -91,3 +91,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+
+
+" append project specific .vimrc files
+set exrc
+set secure
+
