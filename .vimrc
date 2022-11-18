@@ -1,6 +1,5 @@
 
 """"""""""""""GENERAL STUFF""""""""""""""""""
-
 " use vim instead of vi mode
 set nocompatible
 
@@ -9,10 +8,6 @@ set backspace=indent,eol,start
 
 " use more colors
 " set t_Co=256
-
-" turn on syntax highlighting
-syntax enable
-filetype plugin on
 
 " expand path for file tab completion
 set path+=**
@@ -75,6 +70,17 @@ set hidden
 " this breaks mintty copy paste which is currently more important
 " set mouse=a
 
+
+""""""""""""""FILE SPECIFIC STUFF""""""""""""""""""
+" turn on syntax highlighting
+syntax enable
+filetype on
+filetype plugin on
+filetype indent on
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+
+""""""""""""""PLUGINS""""""""""""""""""
 " Plug
 call plug#begin()
     Plug 'morhetz/gruvbox'
@@ -92,8 +98,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 
-
-" append project specific .vimrc files
+""""""""""""""""""""""""""""""""""""""""""""
+""" append project specific .vimrc files """
 set exrc
 set secure
 
