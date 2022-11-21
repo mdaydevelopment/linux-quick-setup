@@ -3,3 +3,7 @@
 ```
 git clone https://github.com/mdaydevelopment/linux-quick-setup.git && cd linux-quick-setup; bash install_things.sh
 ```
+
+```
+git clone git@github.com:mdaydevelopment/linux-quick-setup.git && cd linux-quick-setup; bash install_things.sh
+```
