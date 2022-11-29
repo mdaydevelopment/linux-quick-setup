@@ -70,6 +70,9 @@ set hidden
 " this breaks mintty copy paste which is currently more important
 " set mouse=a
 
+"no idea how this is getting turned on but turn it off!
+set conceallevel=0
+
 
 """"""""""""""FILE SPECIFIC STUFF""""""""""""""""""
 " turn on syntax highlighting
