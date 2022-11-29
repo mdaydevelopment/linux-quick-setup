@@ -70,10 +70,6 @@ set hidden
 " this breaks mintty copy paste which is currently more important
 " set mouse=a
 
-"no idea how this is getting turned on but turn it off!
-set conceallevel=0
-
-
 """"""""""""""FILE SPECIFIC STUFF""""""""""""""""""
 " turn on syntax highlighting
 syntax enable
@@ -81,7 +77,6 @@ filetype on
 filetype plugin on
 filetype indent on
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-
 
 """"""""""""""PLUGINS""""""""""""""""""
 " Plug
@@ -99,10 +94,11 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+" indentLine
+let g:indentLine_setConceal = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""""
 """ append project specific .vimrc files """
 set exrc
 set secure
-
