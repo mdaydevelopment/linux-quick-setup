@@ -87,8 +87,10 @@ call plug#begin()
 call plug#end()
 
 " gruvbox
-colorscheme gruvbox
 set background=dark
+let g:gruvbox_transparent_bg=1
+colorscheme gruvbox
+autocmd VimEnter * hi Normal ctermbg=none
 " nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
