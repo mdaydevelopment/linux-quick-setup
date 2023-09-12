@@ -84,6 +84,7 @@ call plug#begin()
     Plug 'morhetz/gruvbox'
     Plug 'preservim/nerdtree'
     Plug 'Yggdroot/indentLine'
+    Plug 'psf/black', { 'branch': 'stable' }
 call plug#end()
 
 " gruvbox
@@ -96,6 +97,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " indentLine
 let g:indentLine_setConceal = 0
+" black
+:map <F3> :Black<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""
