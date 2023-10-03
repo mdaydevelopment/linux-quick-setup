@@ -84,6 +84,7 @@ call plug#begin()
     Plug 'morhetz/gruvbox'
     Plug 'preservim/nerdtree'
     Plug 'Yggdroot/indentLine'
+    Plug 'ntpeters/vim-better-whitespace'
     Plug 'psf/black', { 'branch': 'stable' }
 call plug#end()
 
