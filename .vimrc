@@ -28,7 +28,7 @@ set smarttab
 
 " speaking of whitespace, let's show some
 "set list
-"set lcs=tab:>_,trail:-
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 "hi SpecialKey cterm=none ctermfg=black    ctermbg=darkyellow
 "hi SpecialKey ctermfg=darkgrey
 
