@@ -70,6 +70,9 @@ set hidden
 " this breaks mintty copy paste which is currently more important
 " set mouse=a
 
+" Auto generate tags file on file write of *.c and *.h files
+autocmd BufWritePost *.c,*.cpp,*.h,*.hpp silent! !ctags . &
+
 """"""""""""""FILE SPECIFIC STUFF""""""""""""""""""
 " turn on syntax highlighting
 syntax enable
