@@ -73,7 +73,7 @@ set hidden
 " Auto generate tags file on file write of *.c and *.h files
 autocmd BufWritePost *.c,*.cpp,*.h,*.hpp silent! !ctags . &
 " ctrl t is going to be used by nerdtree, so we'll use ctrl [ to pop tag
-noremap <C-[> :pop
+noremap <C-[> :pop<CR>
 
 """"""""""""""FILE SPECIFIC STUFF""""""""""""""""""
 " turn on syntax highlighting
