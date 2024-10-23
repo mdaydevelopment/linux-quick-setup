@@ -91,6 +91,8 @@ call plug#begin()
     Plug 'Yggdroot/indentLine'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'psf/black', { 'branch': 'stable' }
+    Plug 'vim-syntastic/syntastic'
+    Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " gruvbox
