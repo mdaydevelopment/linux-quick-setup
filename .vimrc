@@ -1,4 +1,3 @@
-
 """"""""""""""GENERAL STUFF""""""""""""""""""
 " use vim instead of vi mode
 set nocompatible
@@ -27,6 +26,8 @@ set ts=4 sw=4 expandtab
 set smarttab
 
 " speaking of whitespace, let's show some
+" toggle list
+" map <F3> :set list!<CR>
 "set list
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 "hi SpecialKey cterm=none ctermfg=black    ctermbg=darkyellow
@@ -107,9 +108,13 @@ let NERDTreeShowHidden=1
 " indentLine
 let g:indentLine_setConceal = 0
 " black
-:map <F3> :Black<CR>
+" map <F4> :Black<CR>
 " rust
 let g:syntastic_rust_checkers = ['rustc']
+
+""""""""""""""""""""""""""""""""""""""""""""
+"""" append local .vim files if present """"
+runtime local.vim
 
 """"""""""""""""""""""""""""""""""""""""""""
 """ append project specific .vimrc files """
