@@ -115,6 +115,9 @@ let g:syntastic_rust_checkers = ['rustc']
 """"""""""""""""""""""""""""""""""""""""""""
 """" append local .vim files if present """"
 runtime local.vim
+" fix vim opens in replace on some machines
+" put in .vim/local.vim
+" set term=kitty
 
 """"""""""""""""""""""""""""""""""""""""""""
 """ append project specific .vimrc files """
