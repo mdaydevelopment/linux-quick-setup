@@ -108,7 +108,8 @@ let NERDTreeShowHidden=1
 let g:indentLine_setConceal = 0
 " black
 :map <F3> :Black<CR>
-
+" rust
+let g:syntastic_rust_checkers = ['rustc']
 
 """"""""""""""""""""""""""""""""""""""""""""
 """ append project specific .vimrc files """
