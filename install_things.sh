@@ -12,9 +12,11 @@ ln -s $PWD/.vimrc ~/.vimrc
 ln -s $PWD/bashit/mday ~/.bash_it/themes/mday
 
 # edit .bashrc
-sed -i 's/export BASH_IT_THEME=\x27.*\x27/export BASH_IT_THEME=\x27mday\x27/g' ~/.bashrc
-echo '# default editor' >> ~/.bashrc
-echo 'export VISUAL=vim' >> ~/.bashrc
-echo 'export EDITOR="$VISUAL"' >> ~/.bashrc
+# mday theme currently broken because powerline multiline is currently broken
+sed -i 's/export BASH_IT_THEME=\x27.*\x27/export BASH_IT_THEME=\x27pete\x27/g' ~/.bashrc
+echo '# default editor'                     >> ~/.bashrc
+echo 'export VISUAL=vim'                    >> ~/.bashrc
+echo 'export EDITOR="$VISUAL"'              >> ~/.bashrc
+echo 'eval "$(thefuck --alias)"'            >> ~/.bashrc
 
 
