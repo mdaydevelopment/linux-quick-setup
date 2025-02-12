@@ -18,8 +18,9 @@ set hlsearch
 " highlight matching bracket
 set showmatch
 
-" show row numbers
-set number
+" show relative row numbers
+" set number
+set relativenumber
 
 " fix tabs to spaces
 set ts=4 sw=4 expandtab
