@@ -18,19 +18,19 @@ function prompt_setter() {
     }
     k8s_context_prompt="$(k8s_prompt)"
     virtualenv_prompt="$(virtualenv_prompt)"
-    aws2_profile="$(aws2_profile)"
-    function aws2_prompt() {
+    aws_profile="$(aws_profile)"
+    function aws_prompt() {
         cloud_symbol='\U00002601'
         cloud=$(echo -e ${cloud_symbol})
-        if [[ $(aws2_profile) != "default" ]]; then
+        if [[ $(aws_profile) != "default" ]]; then
             echo -ne "${cloud}${AWS_PROFILE}"
         else
             echo -ne ""
         fi
     }
-    aws2_profile="$(aws2_prompt)"
+    aws_profile="$(aws_prompt)"
     _save-and-reload-history 1 # Save history
-    PS1="(${clock_prompt}) ${scm_char} [${blue?}\u${reset_color?}@${green?}\H${reset_color?}] ${yellow?}\w${reset_color?}${scm_prompt_info} ${blue?}${wheel}${k8s_context_prompt}${reset_color?} ${green?}${virtualenv_prompt} ${yellow?}${aws2_profile} ${reset_color?} "
+    PS1="(${clock_prompt}) ${scm_char} [${blue?}\u${reset_color?}@${green?}\H${reset_color?}] ${yellow?}\w${reset_color?}${scm_prompt_info} ${blue?}${wheel}${k8s_context_prompt}${reset_color?} ${green?}${virtualenv_prompt} ${yellow?}${aws_profile} ${reset_color?} "
     PS1+="\n${green?}→${reset_color?} "
     PS2='> '
     PS4='+ '
