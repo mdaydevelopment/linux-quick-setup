@@ -23,7 +23,7 @@ function prompt_setter() {
         cloud_symbol='\U00002601'
         cloud=$(echo -e ${cloud_symbol})
         if [[ $(aws_profile) != "default" ]]; then
-            echo -ne "${cloud}${AWS_PROFILE}"
+            echo -ne "${cloud}${aws_profile}"
         else
             echo -ne ""
         fi
