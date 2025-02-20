@@ -1,5 +1,5 @@
 # install bash-it
-git clone --depth=1 https://github.com/mdaydevelopment/bash-it.git ~/.bash_it
+git clone https://github.com/mdaydevelopment/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
 # install vim-plug
@@ -14,7 +14,7 @@ ln -s $PWD/bashit/mday_pete ~/.bash_it/themes/mday_pete
 
 # edit .bashrc
 # mday theme currently broken because powerline multiline is currently broken
-sed -i 's/export BASH_IT_THEME=\x27.*\x27/export BASH_IT_THEME=\x27pete\x27/g' ~/.bashrc
+sed -i 's/export BASH_IT_THEME=\x27.*\x27/export BASH_IT_THEME=\x27mday_pete\x27/g' ~/.bashrc
 echo "source $PWD/lqs_bashrc.sh" >> ~/.bashrc
 
 
