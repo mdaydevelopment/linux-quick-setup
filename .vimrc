@@ -84,6 +84,7 @@ filetype on
 filetype plugin on
 filetype indent on
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+autocmd FileType yaml set expandtab shiftwidth=2 softtabstop=2
 
 """"""""""""""PLUGINS""""""""""""""""""
 " Plug
@@ -95,6 +96,7 @@ call plug#begin()
     Plug 'psf/black', { 'branch': 'stable' }
     Plug 'vim-syntastic/syntastic'
     Plug 'rust-lang/rust.vim'
+    Plug 'Einenlum/yaml-revealer'
 call plug#end()
 
 " gruvbox
@@ -111,7 +113,7 @@ let g:indentLine_setConceal = 0
 " black
 " map <F4> :Black<CR>
 " rust
-let g:syntastic_rust_checkers = ['rustc']
+let g:syntastic_rust_checkers = ['cargo']
 
 """"""""""""""""""""""""""""""""""""""""""""
 """" append local .vim files if present """"
