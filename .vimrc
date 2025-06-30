@@ -1,4 +1,8 @@
 """"""""""""""GENERAL STUFF""""""""""""""""""
+" stop ubuntu bug opens in replace
+"set t_u7=
+" this replaced first character in file with a g instead of opening in replace
+
 " use vim instead of vi mode
 set nocompatible
 
@@ -97,6 +101,7 @@ call plug#begin()
     Plug 'vim-syntastic/syntastic'
     Plug 'rust-lang/rust.vim'
     Plug 'Einenlum/yaml-revealer'
+    Plug 'grafana/vim-alloy'
 call plug#end()
 
 " gruvbox
