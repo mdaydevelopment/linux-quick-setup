@@ -119,6 +119,8 @@ let g:indentLine_setConceal = 0
 " map <F4> :Black<CR>
 " rust
 let g:syntastic_rust_checkers = ['cargo']
+" yaml-revealer
+let g:yaml_revealer_display_mode = 'statusline'
 
 """"""""""""""""""""""""""""""""""""""""""""
 """" append local .vim files if present """"

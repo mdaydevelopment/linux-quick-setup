@@ -10,6 +10,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ln -s $PWD/.tmux.conf ~/.tmux.conf
 ln -s $PWD/.vimrc ~/.vimrc
 ln -s $PWD/bashit/mday_pete ~/.bash_it/themes/mday_pete
+ln -s $PWD/.XCompose ~/.XCompose
 
 # edit .bashrc
 # mday theme currently broken because powerline multiline is currently broken
