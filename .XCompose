@@ -1,6 +1,7 @@
 include "%L"
 
 <Multi_key> <c> <d> : "🐊"
+<Multi_key> <r> <c> : "🦝"
 <Multi_key> <r> <a> : "→"
 <Multi_key> <a> <o> : "↗"
 
